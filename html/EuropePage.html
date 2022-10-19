@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="../lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="../css/EuropeForm.css" rel="stylesheet" type="text/css" />
+
+<title>MountainTravel_Europe</title>
+
+<script type="text/javascript">
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+</script>
+</head>
+<body>
+<header>
+    <div class="header-banner">
+        <h1>Europe Trekking</h1>
+    </div>
+    <div class="clear"></div>
+    <nav>
+        <div class="site-title">Europe</div>
+        <ul>
+            <li><a href="../Index.html">HOME</a></li>
+        <ul>
+    </nav>
+</header>
+
+
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="swiss" checked>
+  <label for="tab1">Swiss</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="germany">
+  <label for="tab2">Germany</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="england">
+  <label for="tab3">England</label>
+
+  
+  <div class="tab-panels">
+    <section id="swiss" class="tab-panel">
+      <h2>Swiss</h2>
+      <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+      <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+  </section>
+    <section id="germany" class="tab-panel">
+      <h2>Germany</h2>
+      <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
+      <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
+    </section>
+    <section id="england" class="tab-panel">
+      <h2>England</h2>
+      <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
+      <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
+    </section>
+
+  </div>
+  
+</div>
+     
+<!-- <section class="content">
+    <article>
+        <p>내용</p>
+        <p><img src="http://placehold.it/660x150"></p>
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+        
+         
+    </article>
+        
+    <aside>
+        <img src="http://placehold.it/144x150">
+        <img src="http://placehold.it/144x150">
+    </aside>
+</section>  -->
+  
+</body>
+</html>

@@ -1,0 +1,183 @@
+@charset "EUC-KR";
+
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../images/asiaImage/0_korea.jpg");  
+  transition: background-image 1s ease-in-out;
+  overflow-x: hidden;
+  font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
+	background-attachment: fixed;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+  text-align: left;
+  z-index: 10;
+  color: #000;
+  background: none;
+}
+body a, body a:visited {
+  color: #ff8040;
+  text-decoration: none;
+}
+body a:hover {
+  color: #ff8040;
+}
+
+
+header h1 a{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 18px;
+  color: #ff8040;
+}
+
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: left;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  width:150px;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #ff8040;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #fff;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #09B3A7;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel h2{
+	text-align:center;
+	line-height:180%;
+}
+.tab-panel h1{
+	text-align:center;
+}
+.tab-panel p{
+  padding: 20px 50px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  font-size:20px;
+  line-height:180%;
+}
+
+.tab-panel .bigImg{
+	width:700px;
+	height:500px;
+}
+
+.tabset {
+  max-width: 100em;
+  margin:8rem auto;
+  background-color: #000;
+  background: rgba(0, 0, 0, 0.7);
+  	line-height:180%;
+  color: #fff;
+  padding: 20px;
+}
+
